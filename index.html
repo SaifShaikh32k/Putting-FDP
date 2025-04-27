@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category Bin Lookup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Find Bins by Category</h1>
+
+        <div class="input-group">
+            <label for="categoryInput">Enter Category or Storage Zone:</label>
+            <input type="text" id="categoryInput" name="categoryInput" placeholder="e.g., Mobile or G1-HL-RSZ-02" autocomplete="off">
+            <button id="findBinsButton">Find Bins</button>
+        </div>
+
+        <div id="imageContainer" class="image-container">
+            <img id="fsnImage" src="" alt="FSN Image" style="display: none;">
+        </div>
+
+        <div id="resultsTableContainer">
+            <h2>Results:</h2>
+            <table id="resultsTable">
+                <thead>
+                    <tr>
+                        <th>Bin</th>
+                        <!-- Removed Image column header -->
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Bin data will be inserted here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
